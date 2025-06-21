@@ -3,13 +3,13 @@ bin/
 obj/
 out/
 
-# User-specific files
+# Visual Studio files
+*.suo
 *.user
 *.userosscache
-*.suo
 *.sln.docstates
 
-# Visual Studio Code
+# VS Code
 .vscode/
 
 # OS-generated files
@@ -19,43 +19,41 @@ Thumbs.db
 # Logs
 *.log
 
-# ASP.NET Core secrets
-**/appsettings.Development.json
-**/appsettings.Local.json
-secrets.json
+# Configuration files (DO NOT PUSH TO GITHUB)
+appsettings.json
+appsettings.*.json
 
-# Entity Framework Core tools
+# Secrets
+secrets.json
+.env
+.env.*
+
+# Entity Framework Migrations (optional)
 Migrations/
 
-# Publish output
-wwwroot/
+# Published output
 publish/
+wwwroot/
 *.db
 
-# Rider
-.idea/
-
-# NuGet
+# NuGet packages
 *.nupkg
 .nuget/
 packages/
 
-# JetBrains Rider & Resharper
-_ReSharper*/
+# Rider / JetBrains IDEs
+.idea/
 *.DotSettings.user
+_ReSharper*/
 
-# Environment files
-.env
-.env.*
-
-# Test coverage and reports
+# Test and coverage results
+TestResults/
 coverage/
 *.coverage
 *.coveragexml
-TestResults/
 
-# Others
+# Database files
 *.sqlite
-*.bak
 *.mdf
 *.ldf
+*.bak
